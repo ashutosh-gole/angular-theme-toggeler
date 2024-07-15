@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from 'src/services/theme/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-theme-toggeler';
+  title = 'Angular Theme Toggeler';
+
+  constructor(
+    public themeService: ThemeService
+  ) { }
+
+  toggleTheme() {
+    this.themeService.toggleTheme();
+  }
+
 }

@@ -1,0 +1,16 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 16px;
+}
+
+mat-card {
+    max-width: 400px;
+    width: 100%;
+}
